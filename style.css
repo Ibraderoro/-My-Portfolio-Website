@@ -80,49 +80,8 @@ nav ul li a {
     font-size: 24px;
     margin-bottom: 10px;
   }
-  /**
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  } **/
-    
-  /**
-    
-    min-height: 380px;
-    gap: 30px;
-     padding: 10em;
-    filter:brightness(90%);
-    opacity: calc(1);
- 
-    .hero-content {
-    color: rgb(17, 2, 5);
-    font-size: larger;
-    font-weight: 900;
-    font-family:'Courier New', Courier, monospace;
-
-  nav {
-    display: flex;
-    justify-content: space-around;
-  }
-  nav a {
-    text-decoration: none;
-    color: #9596b5;
-    padding: 20px;
-    
-   
-  }
-  nav li {
-    display: inline;
-    float: left;
-  }
-    
-    
-    **/
+  
+  
     /**My about section styles**/
    #about-body {
     font-family: Arial, Helvetica, sans-serif;
@@ -131,38 +90,44 @@ nav ul li a {
     background-color: #f4f4f4;
    } 
    .container-about {
-   
+   justify-content: space-between;
     margin: 0 auto;
     display: flex;
     align-items: center;
     height: 900px;
+    background-color:rgb(239, 223, 200);
     
    }
    
    .Bio-image {
-    background-image: url("assets/for bio.jpeg");
-    width: 50%;
-    height: 100%;
+    /* background-image: url(""); */
+    width: 30%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5px 50px 20px;
-    gap: 10px;
-   }
+    padding-right: 70px;
    
-   .Right-container {
-    width: 50%;
+   }
+   .Bio-image img {
+    width: 150%;
+    height: 200%;
     margin-left: 40px;
-    margin-right: 40px;
+   }
+   .Right-container {
+    width: 40%;
+    /* margin-left: 40px; */
+    margin-right: 90px;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding: 10px 50px 20px;
+    padding-left: 40px;
+    
    }
    .Bio-info h2 {
     margin-bottom: 20px;
     font-size: 28px;
     color: #333;
+    text-align: center;
    }
    .Bio-info p {
     margin-bottom: 20px;
@@ -192,63 +157,92 @@ nav ul li a {
   /* contact Section Styles */
   .body-contact {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    
-   
     background-color: #f4f4f4;
+}
+
+.container-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+ }
+.contact-form {
+  padding: 5px;
+  
+  
+}
+.contact-info {
+  padding: 5px;
+}
+
+.contact-info ul li {
+padding: 20px;
+list-style-type: none;
+}
+ 
+label {
+  font-weight: bold;
+
+}
+
+.contact-form input, textarea {
+  width: 100%;
+  /* padding: 15px 20px; */
+  /* border: 1px solid #ccc; */
+  border: none;
+  font-size: 16px;
+  height: 45px;
+  background: transparent;
+  border-bottom: 1px solid #43434d;
+  border-radius: 0;
   }
-  
-  .container-contact {
-    display: flex;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-form, .contact-info {
-    flex: 1;
-    margin: 10px;
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-form label {
-    margin-top: 10px;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact-form input[type="submit"] {
-    margin-top: 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 5px;
-  }
-  
-  .contact-form input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  .contact-info h2 {
-    margin-top: 0;
-  }
-  
-  .contact-info p {
-    margin: 5px 0;
-  } 
-  
-  
-  
-  
+
+.contact-form h1 {
+  text-align: center;
+  width:100%;
+}
+.contact-info a {
+  text-decoration: none;
+}
+/**projects style**/
+.project-video {
+  display: flex;
+  justify-content:center;
+  padding-top: 50px;
+
+}
+.headi {
+  text-align: center;
+}
+
+/**social media style**/
+ .social-media a {
+  padding: 5px;
+ }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/**footer style**/
+.home-footer, 
+.blog-footer, 
+.contact-footer,
+.project-footer,
+.resume-footer,
+.about-footer {
+  color: rgb(7, 7, 7);
+  text-align:center;
+}
+.home-footer p, 
+.blog-footer p, 
+.contact-footer p,
+.project-footer p,
+.resume-footer p,
+.about-footer p
+{
+  font-size: small;
+}
+
+/**REsume section**/

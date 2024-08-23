@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body class="body-contact">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="body-contact">
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
     </header>
-        <div class="container-contact">
-            <div class="contact-form">
-                <form action="/submit-form" method="post">
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname">
-            
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname">
-            
-                    <label for="email">Email address:</label>
-                    <input type="email" id="email" name="email">
-            
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea>
-            
-                    <input type="submit" value="SEND MESSAGE">
-                </form>
-            </div>
-            <div class="contact-info">
-                  <h2>Contact Info</h2>
-                <address>
-                    Cedar Ave, Bronx, NY.
-                </address>
-                <ul> 
-                    <li><a href="tel:+1(929)-900-1043">+1(929)-900-1043</a></li>
-                    <li><a href="tel:+1(929)-800-4545">+1(929)-800-4545</a></li>
-                    <li><a href="mailto:salisu.ibrahim15@yahoo.com">salisu.ibrahim15@yahoo.com</a></li>
-                </ul>
-                
-            </div>
-        </div>
-    
-        <footer>
-            <p>&copy; 2024 All Right Reserved</p>
-       </footer>
-</body>
-
+    <section class="container-contact">
+      <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="/submit-form" method="post">
+         <div class="fullname"><label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" />
+          <br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" />
+          <br /></div> 
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="email" />
+          <br />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <br />
+          <button><input type="submit" value="SEND MESSAGE" /></button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <address>
+          <h2>Contact Info</h2>
+          <p>2175 Cedar Ave, Bronx, NY.</p>
+          <ul>
+            <li><a href="tel:+1(929)-900-1043">📞+1(929)-900-1043</a></li>
+            <li><a href="tel:+1(929)-800-4545">📞+1(929)-800-4545</a></li>
+            <li>
+              <a href="mailto:salisu.ibrahim15@yahoo.com"
+                >📧salisu.ibrahim15@yahoo.com</a
+              >
+            </li>
+          </ul>
+        </address>
+       <span> <h4>Follow ME👇</h4>
+          <a href="https://www.linkedin.com/in/salisu-ibrahim1" class="fa fa-linkedin"></a>
+          <a href="https://www.facebook.com/salisu.ibrahim.1213" class="fa fa-facebook"></a>
+          <a href="https://github.com/Ibraderoro" class="fa fa-github"></a>
+          <a href="https://x.com/Salisu_TECH" class="fa fa-twitter"></a>
+        </span>
+      </div>
+    </section>
+    <footer class="contact-footer">
+      <p>&copy; 2024 All Right Reserved</p>
+    </footer>
+  </body>
 </html>
